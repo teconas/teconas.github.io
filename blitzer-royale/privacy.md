@@ -32,11 +32,11 @@ Je nach Geräte-Einstellungen oder Betriebssystem-Funktionen (z. B. Google-Bac
 Auf diese Vorgänge hat der App-Anbieter **keinen Einfluss**.
 
 ## Rechte betroffener Personen  
-Da keine personenbezogenen Daten verarbeitet werden, bestehen **keine darüber hinausgehenden Rechte** im Sinne der Artikel 15 bis 22 DSGVO.
+Sie haben grundsätzlich die Rechte aus Art. 15 bis 22 DSGVO (z. B. Auskunft, Löschung). Da die App **keine personenbezogenen Daten** verarbeitet, liegen hierzu jedoch keine Daten vor.
 
 ## Kontakt  
 Bei Fragen zum Datenschutz können Sie sich gerne an folgende Adresse wenden:  
 📧 **dev.teconas@gmail.com**
 
 ## Stand  
-11. Juni 2025. Änderungen dieser Datenschutzerklärung bleiben vorbehalten.
+7\. November 2026. Änderungen dieser Datenschutzerklärung bleiben vorbehalten.
