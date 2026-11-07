@@ -1,32 +1,35 @@
 # CLAUDE.md
 
-## Zweck
-GitHub-Pages-User-Site `teconas.github.io`: Datenschutzerklärungen und Landingpages für die Play-Store-Apps von teconas. Jekyll mit Theme `minima` (2.5.x auf GitHub Pages), kein eigenes Gemfile.
+## Purpose
+GitHub Pages user site `teconas.github.io`: privacy policies and landing pages for the Play Store apps by teconas. Jekyll with theme `minima` (2.5.x on GitHub Pages), no Gemfile of its own.
 
-## Struktur und URLs
-- `_config.yml`: einzige zentrale Stelle. Site-Werte (`title`, `author`, `owner`, `email`), Spieleliste `games` (`slug`, `name`, `description`, `draft`, `play_store`), `defaults`, `exclude`, `permalink: pretty`.
-- `defaults`: `""` → Layout `game`, `lang: en`; `*/privacy.md` → Layout `privacy`, `lang: de`; je Spiel `path: <slug>` → `game: <slug>`.
-- Layouts `game`/`privacy` holen das Spiel per `site.games | where: "slug", page.game` und zeigen bei `draft: true` den Entwurfshinweis.
-- `_includes/header.html` überschreibt minima: Navigation aus `site.games`.
-- `/privacy/` → `privacy.md` (Datenschutz der Website; eigenes Front Matter `layout: default`, `lang: de`; `*/privacy.md` greift im Root nicht).
+## Language
+Everything is English, except the content inside `blitzer-royale/` (the game and its privacy policy are German).
+
+## Structure and URLs
+- `_config.yml`: the single central place. Site values (`title`, `author`, `owner`, `email`), games list `games` (`slug`, `name`, `description`, `draft`, `play_store`), `defaults`, `exclude`, `permalink: pretty`.
+- `defaults`: `""` → layout `game`; `*/privacy.md` → layout `privacy`; per game `path: <slug>` → `game: <slug>`; `blitzer-royale/privacy.md` → `lang: de`. Site `lang: en`.
+- Layouts `game`/`privacy` look up the game via `site.games | where: "slug", page.game` and show the draft notice if `draft: true`.
+- `_includes/header.html` overrides minima: navigation from `site.games`.
+- `/privacy/` → `privacy.md` (website privacy policy; own front matter `layout: default`; `*/privacy.md` does not match the root).
 - `/` → `index.md`, `/<slug>/` → `<slug>/index.md`, `/<slug>/privacy/` → `<slug>/privacy.md`.
 
-## Neues Spiel hinzufügen
-1. Ordner `<slug>/` mit `index.md` und `privacy.md` (Vorlage: Stub eines Entwurfs-Spiels oder Gliederung von `blitzer-royale/privacy.md`).
-2. Eintrag in `games` (mit `draft: true`) und `defaults`-Block `path: <slug>` → `game: <slug>`.
-3. Alle app-spezifischen Stellen als `TODO` markieren; vor Veröffentlichung `grep -rn TODO <slug>/ _config.yml` leer bekommen.
-4. `draft: true` entfernen, Play-Store-Link eintragen.
-5. User trägt `https://teconas.github.io/<slug>/privacy/` in der Play Console ein.
+## Adding a new game
+1. Folder `<slug>/` with `index.md` and `privacy.md` (template: a draft game's stub or the outline of `blitzer-royale/privacy.md`).
+2. Entry in `games` (with `draft: true`) and a `defaults` block `path: <slug>` → `game: <slug>`.
+3. Mark all app-specific parts as `TODO`; before publishing, `grep -rn TODO <slug>/ _config.yml` must be empty.
+4. Remove `draft: true`, add the Play Store link.
+5. The user enters `https://teconas.github.io/<slug>/privacy/` in the Play Console.
 
-## Harte Regeln
-- Veröffentlichte Datenschutztexte nur auf ausdrückliche Anweisung inhaltlich ändern (auch keine Tippfehler-Korrekturen). Kontaktdaten darin bleiben hart codiert, außer der gerenderte Text bleibt exakt identisch.
-- URLs, die in der Play Console hinterlegt sind, dürfen sich nicht ändern (Ordnernamen, Dateinamen, `permalink`).
-- `exclude` in `_config.yml` pflegen, wenn neue interne Dateien dazukommen. GitHub Pages rendert sonst auch Markdown ohne Front Matter. Jekyll-Standard-Excludes sind dort mit aufgeführt, weil die Liste sie überschreibt.
-- Keine externen Ressourcen (Fonts, Skripte, CDNs), kein Tracking, keine Cookies, kein `google_analytics`.
-- Keine `.nojekyll`-Datei.
-- Zeilen, die mit einer Zahl und Punkt beginnen (z. B. Datum unter „Stand“), escapen: `7\. November 2026.` Sonst rendert Markdown eine Liste und die Zahl geht verloren.
+## Hard rules
+- Change the content of published privacy policies only on explicit instruction (not even typo fixes). Contact details in them stay hard-coded unless the rendered text stays exactly identical.
+- URLs entered in the Play Console must not change (folder names, file names, `permalink`).
+- Maintain `exclude` in `_config.yml` when new internal files are added. GitHub Pages otherwise renders Markdown without front matter too. Jekyll's default excludes are repeated there because the list replaces them.
+- No external resources (fonts, scripts, CDNs), no tracking, no cookies, no `google_analytics`.
+- No `.nojekyll` file.
+- Escape lines starting with a number and a period (e.g. a German date under "Stand"): `7\. November 2026.` Otherwise Markdown renders a list and the number is lost.
 
 ## Deployment
-- Nicht selbst committen oder pushen, das macht der User.
-- Push auf den Default-Branch `main` = live (GitHub Pages baut selbst).
-- Lokale Vorschau nur mit Ruby: `gem install github-pages` und `jekyll serve`. Auf diesem Rechner ist aktuell kein Ruby installiert; dann statisch prüfen (Front Matter, Liquid, Links, `exclude`).
+- Do not commit or push yourself; the user does that.
+- Push to the default branch `main` = live (GitHub Pages builds by itself).
+- Local preview only with Ruby: `gem install github-pages` and `jekyll serve`. Ruby is currently not installed on this machine; then check statically (front matter, Liquid, links, `exclude`).

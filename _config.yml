@@ -1,47 +1,49 @@
-# Zentrale Konfiguration für https://teconas.github.io
-# Neues Spiel: Eintrag unter `games` + Eintrag unter `defaults` (siehe README.md).
+# Central configuration for https://teconas.github.io
+# New game: add an entry under `games` and a block under `defaults` (see README.md).
 
 title: teconas
-description: Apps & Spiele von teconas
-author: teconas                     # Entwicklername
-owner: teconas (Simon "Max" Detje)  # Verantwortlicher in Datenschutzerklärungen
+description: Apps & games by teconas
+author: teconas                     # developer name
+owner: teconas (Simon "Max" Detje)  # controller named in privacy policies
 email: dev.teconas@gmail.com
-lang: de
+lang: en
 
 url: https://teconas.github.io
 baseurl: ""
-permalink: pretty                   # saubere URLs: foo/bar.md -> /foo/bar/
+permalink: pretty                   # clean URLs: foo/bar.md -> /foo/bar/
 
 theme: minima
 
-# Liste aller Spiele. Startseite und Navigation werden daraus generiert.
-# slug = Ordnername = URL-Pfad. draft: true zeigt den Hinweis „ENTWURF – nicht final“.
+# All games. The landing page and navigation are generated from this list.
+# slug = folder name = URL path. draft: true shows the "DRAFT – not final" notice.
 games:
   - slug: blitzer-royale
     name: Blitzer Royale
-    description: Komplett auf Deutsch, vor allem für Mobilgeräte. Kostenlos, offline, ohne Werbung und Tracking.
+    description: Entirely in German, mainly for mobile. Free, offline, no ads, no tracking.
     play_store: https://play.google.com/store/apps/details?id=com.teconas.blitzerroyale&hl=de
 
-# Layout und spielbezogene Werte pro Ordner.
-# Bei gleichen Schlüsseln gewinnt der längere (spezifischere) Pfad.
+# Layout and game-specific values per folder.
+# For the same key, the longer (more specific) path wins.
 defaults:
   - scope:
       path: ""
     values:
-      layout: game    # Landingpages (Englisch)
-      lang: en
+      layout: game
   - scope:
       path: "*/privacy.md"
     values:
-      layout: privacy # Datenschutzerklärungen (Deutsch)
-      lang: de
+      layout: privacy
   - scope:
       path: blitzer-royale
     values:
       game: blitzer-royale
+  - scope:
+      path: blitzer-royale/privacy.md
+    values:
+      lang: de                      # policy text is German
 
-# Nicht veröffentlichen. Jekyll-Standard-Excludes werden hier überschrieben, daher mit aufgeführt.
-# GitHub Pages rendert sonst auch Markdown ohne Front Matter (z. B. /CLAUDE/).
+# Not published. This list replaces Jekyll's default excludes, so those are repeated here.
+# Otherwise GitHub Pages also renders Markdown without front matter (e.g. /CLAUDE/).
 exclude:
   - README.md
   - CLAUDE.md

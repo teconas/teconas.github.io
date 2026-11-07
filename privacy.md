@@ -1,33 +1,32 @@
 ---
 layout: default
-lang: de
-title: Datenschutzerklärung / Privacy Policy – Website
+title: Privacy Policy – Website
 ---
-# Datenschutzerklärung – Website teconas.github.io
+# Privacy Policy – teconas.github.io
 
-Diese Erklärung gilt für diese Website. Für die Apps gelten die jeweils dort verlinkten Datenschutzerklärungen.
+This privacy policy applies to this website. Each app has its own privacy policy, linked on the app's page.
 
-## Verantwortlicher  
+## Controller  
 {{ site.owner }}  
-E-Mail: [{{ site.email }}](mailto:{{ site.email }})
+Email: [{{ site.email }}](mailto:{{ site.email }})
 
-## Hosting über GitHub Pages  
-Diese Website wird über **GitHub Pages** bereitgestellt, einen Dienst der GitHub, Inc. (USA).  
-Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Daten, insbesondere **Ihre IP-Adresse**, z. B. zur Auslieferung der Seiten und zur Gewährleistung der Sicherheit. Dabei kann eine Übermittlung in die USA stattfinden.  
-Auf diese Datenverarbeitung hat der Betreiber dieser Website **keinen Einfluss**. Es gelten die **Datenschutzbestimmungen von GitHub**, abrufbar unter:  
-👉 [https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)
+## Hosting via GitHub Pages  
+This website is hosted on **GitHub Pages**, a service provided by GitHub, Inc. (USA).  
+When you visit the pages, GitHub processes technically necessary data, in particular **your IP address**, e.g. to deliver the pages and to keep the service secure. This may involve a transfer of data to the USA.  
+The operator of this website has **no influence** over this processing. **GitHub's privacy statement** applies, available at:  
+👉 [https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 
-Rechtsgrundlage ist das berechtigte Interesse an einer sicheren und zuverlässigen Bereitstellung der Website (Art. 6 Abs. 1 lit. f DSGVO).
+The legal basis is the legitimate interest in providing this website securely and reliably (Art. 6(1)(f) GDPR).
 
-## Keine Cookies, kein Tracking  
-Diese Website setzt **keine Cookies**, nutzt **keine Analyse- oder Tracking-Tools** und lädt **keine externen Inhalte** (z. B. Schriftarten oder Skripte) nach.
+## No cookies, no tracking  
+This website sets **no cookies**, uses **no analytics or tracking tools** and loads **no external content** (such as fonts or scripts).
 
-## Rechte betroffener Personen  
-Sie haben grundsätzlich die Rechte aus Art. 15 bis 22 DSGVO (z. B. Auskunft, Löschung). Da der Betreiber dieser Website selbst keine personenbezogenen Daten verarbeitet, liegen bei ihm hierzu keine Daten vor.
+## Your rights  
+In principle, you have the rights under Art. 15 to 22 GDPR (e.g. access, erasure). However, since the operator of this website does not process any personal data itself, the operator holds no data about you.
 
-## Kontakt  
-Bei Fragen zum Datenschutz können Sie sich gerne an folgende Adresse wenden:  
+## Contact  
+If you have any questions about privacy, please contact:  
 📧 **{{ site.email }}**
 
-## Stand  
-7\. November 2026. Änderungen dieser Datenschutzerklärung bleiben vorbehalten.
+## Last updated  
+November 7, 2026. This privacy policy may be updated from time to time.

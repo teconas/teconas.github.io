@@ -1,42 +1,42 @@
 # teconas.github.io
 
-Landingpages und Datenschutzerklärungen für die Apps & Spiele von teconas (u. a. für Google Play).
-Wird per GitHub Pages (Jekyll, Theme `minima`) unter https://teconas.github.io veröffentlicht.
+Landing pages and privacy policies for the apps & games by teconas (e.g. for Google Play).
+Published via GitHub Pages (Jekyll, theme `minima`) at https://teconas.github.io.
 
-Diese Datei und `CLAUDE.md` werden **nicht** veröffentlicht (`exclude` in `_config.yml`).
+This file and `CLAUDE.md` are **not** published (`exclude` in `_config.yml`).
 
-## Struktur
+## Structure
 
 ```
-_config.yml          zentrale Konfiguration: Site-Werte, Spieleliste (games), defaults, exclude
-_layouts/            game.html (Landingpage), privacy.html (Datenschutzerklärung)
-_includes/           header.html (Navigation aus games), draft-notice.html
-index.md             Startseite, listet alle Spiele aus games
-privacy.md           Datenschutzerklärung der Website selbst
-<slug>/index.md      Landingpage eines Spiels
-<slug>/privacy.md    Datenschutzerklärung eines Spiels
+_config.yml          central configuration: site values, games list (games), defaults, exclude
+_layouts/            game.html (landing page), privacy.html (privacy policy)
+_includes/           header.html (navigation from games), draft-notice.html
+index.md             home page, lists all games from games
+privacy.md           privacy policy of the website itself
+<slug>/index.md      landing page of a game
+<slug>/privacy.md    privacy policy of a game
 ```
 
-## URL-Schema
+## URL scheme
 
-| Seite                 | URL                                          |
-|-----------------------|----------------------------------------------|
-| Startseite            | `https://teconas.github.io/`                 |
-| Datenschutz Website   | `https://teconas.github.io/privacy/`         |
-| Landingpage           | `https://teconas.github.io/<slug>/`          |
-| Datenschutzerklärung  | `https://teconas.github.io/<slug>/privacy/`  |
+| Page                    | URL                                          |
+|-------------------------|----------------------------------------------|
+| Home                    | `https://teconas.github.io/`                 |
+| Website privacy policy  | `https://teconas.github.io/privacy/`         |
+| Game landing page       | `https://teconas.github.io/<slug>/`          |
+| Game privacy policy     | `https://teconas.github.io/<slug>/privacy/`  |
 
-## Neues Spiel hinzufügen
+## Adding a new game
 
-1. Ordner `<slug>/` anlegen (lowercase, Bindestriche), z. B. `blitzer-royale/` als Vorlage kopieren.
-2. In `_config.yml` unter `games` eintragen (`slug`, `name`, `description`, `draft: true`, später `play_store`).
-3. In `_config.yml` unter `defaults` einen Block `path: <slug>` mit `game: <slug>` ergänzen.
-4. `title` in `index.md` und `privacy.md` anpassen, alle `TODO`s abarbeiten (`grep -rn TODO <slug>/`).
-5. `draft: true` entfernen, pushen, `https://teconas.github.io/<slug>/privacy/` in der Play Console hinterlegen.
+1. Create a folder `<slug>/` (lowercase, hyphens), e.g. by copying `blitzer-royale/` as a template.
+2. Add the game under `games` in `_config.yml` (`slug`, `name`, `description`, `draft: true`, later `play_store`).
+3. Add a block `path: <slug>` with `game: <slug>` under `defaults` in `_config.yml`.
+4. Adjust `title` in `index.md` and `privacy.md` and resolve all `TODO`s (`grep -rn TODO <slug>/`).
+5. Remove `draft: true`, push, and enter `https://teconas.github.io/<slug>/privacy/` in the Play Console.
 
-## Lokale Vorschau
+## Local preview
 
-Benötigt Ruby + Bundler:
+Requires Ruby:
 
 ```bash
 gem install github-pages
