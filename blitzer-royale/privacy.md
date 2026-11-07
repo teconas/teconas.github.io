@@ -4,10 +4,10 @@ title: Datenschutzerklärung / Privacy Policy – Blitzer Royale
 # Datenschutzerklärung – Blitzer Royale
 
 ## Name der App  
-**Blitzer Royale** / **Blitzer Royal**
+**Blitzer Royale**
 
 ## Verantwortlicher  
-Teconas (Simon "Max" Detje)  
+teconas (Simon "Max" Detje)  
 E-Mail: [dev.teconas@gmail.com](mailto:dev.teconas@gmail.com)
 
 ## Allgemeine Hinweise  
@@ -20,7 +20,7 @@ Es werden **keine Analyse-Tools**, **keine Werbe-SDKs**, **keine Webanfragen**, 
 Da keine Verarbeitung personenbezogener Daten erfolgt, ist **keine Rechtsgrundlage gemäß Art. 6 DSGVO erforderlich**.
 
 ## Datenerhebung durch Google Play  
-Beim Herunterladen und Installieren der App über den Google Play Store kann Google selbst bestimmte Daten erfassen, etwa zur Geräteidentifikation oder Nutzung der App.
+Beim Herunterladen und Installieren der App über den Google Play Store kann Google selbst bestimmte Daten erfassen, etwa zur Geräteidentifikation oder Nutzung der App.  
 Auf diese Datenverarbeitung hat der Anbieter dieser App **keinen Einfluss**. Es gelten in diesem Fall die **Datenschutzrichtlinien von Google**, abrufbar unter:  
 👉 [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
