@@ -11,6 +11,7 @@ Everything is English, except the content inside `blitzer-royale/` (the game and
 - `defaults`: `""` → layout `game`; `*/privacy.md` → layout `privacy`; per game `path: <slug>` → `game: <slug>`; `blitzer-royale/privacy.md` → `lang: de`. Site `lang: en`.
 - Layouts `game`/`privacy` look up the game via `site.games | where: "slug", page.game` and show the draft notice if `draft: true`.
 - `_includes/header.html` overrides minima: navigation from `site.games`.
+- `_includes/footer.html` overrides minima: only email and link to the website privacy policy.
 - `/privacy/` → `privacy.md` (website privacy policy; own front matter `layout: default`; `*/privacy.md` does not match the root).
 - `/` → `index.md`, `/<slug>/` → `<slug>/index.md`, `/<slug>/privacy/` → `<slug>/privacy.md`.
 

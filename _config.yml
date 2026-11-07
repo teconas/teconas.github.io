@@ -2,7 +2,7 @@
 # New game: add an entry under `games` and a block under `defaults` (see README.md).
 
 title: teconas
-description: Apps & games by teconas
+description: Apps & games
 author: teconas                     # developer name
 owner: teconas (Simon "Max" Detje)  # controller named in privacy policies
 email: dev.teconas@gmail.com

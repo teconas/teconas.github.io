@@ -10,7 +10,7 @@ This file and `CLAUDE.md` are **not** published (`exclude` in `_config.yml`).
 ```
 _config.yml          central configuration: site values, games list (games), defaults, exclude
 _layouts/            game.html (landing page), privacy.html (privacy policy)
-_includes/           header.html (navigation from games), draft-notice.html
+_includes/           header.html (navigation from games), footer.html (email, website privacy), draft-notice.html
 index.md             home page, lists all games from games
 privacy.md           privacy policy of the website itself
 <slug>/index.md      landing page of a game
