@@ -21,6 +21,11 @@ games:
     name: Blitzer Royale
     description: Entirely in German, mainly for mobile. Free, offline, no ads, no tracking.
     play_store: https://play.google.com/store/apps/details?id=com.teconas.blitzerroyale&hl=de
+  - slug: ripplebloom
+    name: Ripplebloom
+    description: A calm tap puzzle on a pond. Throw stones, let the ripples spread and make every water lily bloom.
+    draft: true       # TODO: entfernen, wenn Landingpage und Datenschutzerklärung final sind
+    # play_store:     # TODO: Play-Store-Link nach Veröffentlichung eintragen
 
 # Layout and game-specific values per folder.
 # For the same key, the longer (more specific) path wins.
@@ -41,6 +46,10 @@ defaults:
       path: blitzer-royale/privacy.md
     values:
       lang: de                      # policy text is German
+  - scope:
+      path: ripplebloom
+    values:
+      game: ripplebloom
 
 # Not published. This list replaces Jekyll's default excludes, so those are repeated here.
 # Otherwise GitHub Pages also renders Markdown without front matter (e.g. /CLAUDE/).
