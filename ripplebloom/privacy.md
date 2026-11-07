@@ -1,54 +1,43 @@
 ---
-title: Datenschutzerklärung / Privacy Policy – Ripplebloom
+title: Privacy Policy – Ripplebloom
 ---
 {% assign game = site.games | where: "slug", page.game | first -%}
-# Datenschutzerklärung – {{ game.name }}
+# Privacy Policy – {{ game.name }}
 
-## Name der App  
+## App name  
 **{{ game.name }}**
 
-## Verantwortlicher  
+## Controller  
 {{ site.owner }}  
-E-Mail: [{{ site.email }}](mailto:{{ site.email }})
+Email: [{{ site.email }}](mailto:{{ site.email }})
 
-## Allgemeine Hinweise  
-Der Schutz Ihrer Daten ist mir wichtig. Diese App erhebt, speichert oder verarbeitet **keine personenbezogenen Daten** im Sinne der Datenschutz-Grundverordnung (DSGVO).
-**TODO: Nur so stehen lassen, wenn es für die finale App zutrifft.**
+## General information  
+Protecting your data matters to me. This app does not collect, store or process any **personal data** within the meaning of the General Data Protection Regulation (GDPR).
 
-## Keine Datenerhebung durch die App  
-Die App **{{ game.name }}** ist vollständig offlinefähig und erhebt keinerlei Informationen über Ihre Person, Ihr Gerät, Ihren Standort oder Ihr Nutzungsverhalten.  
-Es werden **keine Analyse-Tools**, **keine Werbe-SDKs**, **keine Webanfragen**, **keine In-App-Käufe** und **keine Tracker** eingesetzt.
+## No data collection by the app  
+The app **{{ game.name }}** works fully offline and collects no information about you, your device, your location or how you use it.  
+It uses **no analytics tools**, **no advertising SDKs**, **no web requests**, **no in-app purchases** and **no trackers**.
 
-- **TODO SDKs:** Eingebundene Bibliotheken/SDKs prüfen (z. B. Capacitor-Plugins) und ob sie Daten erheben oder senden.
-- **TODO Werbung:** Keine Werbung? Sonst Werbenetzwerk, Datenarten, Einwilligung (Consent) beschreiben.
-- **TODO Analytics:** Keine Analyse-/Crash-Reporting-Tools? Sonst Anbieter und Datenarten nennen.
-- **TODO In-App-Käufe:** Keine? Sonst Abwicklung über Google Play Billing beschreiben.
-- **TODO Online-Funktionen:** Wirklich keine Webanfragen (auch keine Fonts, Updates, Bestenlisten)?
-- **TODO Berechtigungen:** Angeforderte Android-Berechtigungen aus dem Manifest prüfen und ggf. aufführen (z. B. INTERNET).
+Since no personal data is processed, **no legal basis under Art. 6 GDPR is required**.
 
-Da keine Verarbeitung personenbezogener Daten erfolgt, ist **keine Rechtsgrundlage gemäß Art. 6 DSGVO erforderlich**.
-**TODO: Anpassen, falls oben doch eine Verarbeitung stattfindet.**
-
-## Datenerhebung durch Google Play  
-Beim Herunterladen und Installieren der App über den Google Play Store kann Google selbst bestimmte Daten erfassen, etwa zur Geräteidentifikation oder Nutzung der App.
-Auf diese Datenverarbeitung hat der Anbieter dieser App **keinen Einfluss**. Es gelten in diesem Fall die **Datenschutzrichtlinien von Google**, abrufbar unter:  
+## Data collection by Google Play  
+When you download and install the app from the Google Play Store, Google itself may collect certain data, for example to identify the device or about app usage.  
+The provider of this app has **no influence** on this processing. **Google's privacy policy** applies, available at:  
 👉 [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
-## Lokale Speicherung von Spieldaten
-Der Spielstand und andere technisch notwendige Spieldaten werden **ausschließlich lokal auf dem Gerät gespeichert**.  
-Diese Daten enthalten **keine personenbezogenen Informationen** und werden von der App **nicht an Dritte übermittelt**.
-**TODO: Prüfen, was genau gespeichert wird (z. B. Level-Fortschritt, Einstellungen) und wo (z. B. WebView-Speicher).**
+## Local storage of game data
+Game progress and other technically necessary game data are **stored only locally on the device**.  
+This data contains **no personal information** and is **not transmitted to third parties** by the app.
 
-Je nach Geräte-Einstellungen oder Betriebssystem-Funktionen (z. B. Google-Backups oder Gerätemigrationen) kann es jedoch sein, dass diese Daten von **Google oder anderen Dienstanbietern automatisch synchronisiert oder gesichert** werden.  
-Auf diese Vorgänge hat der App-Anbieter **keinen Einfluss**.
+Depending on device settings or operating system features (e.g. Google backups or device migration), this data may however be **automatically synchronized or backed up by Google or other service providers**.  
+The app provider has **no influence** on these processes.
 
-## Rechte betroffener Personen  
-Sie haben grundsätzlich die Rechte aus Art. 15 bis 22 DSGVO (z. B. Auskunft, Löschung). Da die App **keine personenbezogenen Daten** verarbeitet, liegen hierzu jedoch keine Daten vor.
-**TODO: Betroffenenrechte ausführen, falls doch Daten verarbeitet werden.**
+## Your rights  
+In principle, you have the rights under Art. 15 to 22 GDPR (e.g. access, erasure). However, since the app processes **no personal data**, no data about you is held.
 
-## Kontakt  
-Bei Fragen zum Datenschutz können Sie sich gerne an folgende Adresse wenden:  
+## Contact  
+If you have any questions about data protection, feel free to contact:  
 📧 **{{ site.email }}**
 
-## Stand  
-**TODO: Datum der Veröffentlichung.** Änderungen dieser Datenschutzerklärung bleiben vorbehalten.
+## Last updated  
+**TODO: release date.** This privacy policy may be updated from time to time.

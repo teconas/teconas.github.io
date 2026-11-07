@@ -24,8 +24,8 @@ games:
   - slug: ripplebloom
     name: Ripplebloom
     description: A calm tap puzzle on a pond. Throw stones, let the ripples spread and make every water lily bloom.
-    draft: true       # TODO: entfernen, wenn Landingpage und Datenschutzerklärung final sind
-    # play_store:     # TODO: Play-Store-Link nach Veröffentlichung eintragen
+    draft: true       # TODO: remove once landing page and privacy policy are final
+    # play_store:     # TODO: add Play Store link after release
 
 # Layout and game-specific values per folder.
 # For the same key, the longer (more specific) path wins.
