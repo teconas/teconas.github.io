@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Datenschutzerklärung – Blitzer Royale
+title: Datenschutzerklärung / Privacy Policy – Blitzer Royale
 ---
 # Datenschutzerklärung – Blitzer Royale
 

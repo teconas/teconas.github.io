@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{%- assign game = site.games | where: "slug", page.game | first -%}
+{%- if game.draft -%}{%- include draft-notice.html -%}{%- endif %}
+{{ content }}
+<hr>
+<p><a href="{{ game.slug | prepend: '/' | append: '/privacy/' | relative_url }}">Datenschutzerklärung / Privacy Policy</a></p>

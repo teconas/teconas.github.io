@@ -1,2 +1,51 @@
-title: Blitzer Royale – Datenschutzerklärung
+# Zentrale Konfiguration für https://teconas.github.io
+# Neues Spiel: Eintrag unter `games` + Eintrag unter `defaults` (siehe README.md).
+
+title: teconas
+description: Apps & Spiele von teconas
+author: teconas                     # Entwicklername
+owner: Teconas (Simon "Max" Detje)  # Verantwortlicher in Datenschutzerklärungen
+email: dev.teconas@gmail.com
+lang: de
+
+url: https://teconas.github.io
+baseurl: ""
+permalink: pretty                   # saubere URLs: foo/bar.md -> /foo/bar/
+
 theme: minima
+
+# Liste aller Spiele. Startseite und Navigation werden daraus generiert.
+# slug = Ordnername = URL-Pfad. draft: true zeigt den Hinweis „ENTWURF – nicht final“.
+games:
+  - slug: blitzer-royale
+    name: Blitzer Royale
+    description: Komplett auf Deutsch, vor allem für Mobilgeräte. Kostenlos, offline, ohne Werbung und Tracking.
+    play_store: https://play.google.com/store/apps/details?id=com.teconas.blitzerroyale&hl=de
+
+# Layout und spielbezogene Werte pro Ordner.
+# Bei gleichen Schlüsseln gewinnt der längere (spezifischere) Pfad.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: game    # Landingpages (Englisch)
+      lang: en
+  - scope:
+      path: "*/privacy.md"
+    values:
+      layout: privacy # Datenschutzerklärungen (Deutsch)
+      lang: de
+  - scope:
+      path: blitzer-royale
+    values:
+      game: blitzer-royale
+
+# Nicht veröffentlichen. Jekyll-Standard-Excludes werden hier überschrieben, daher mit aufgeführt.
+# GitHub Pages rendert sonst auch Markdown ohne Front Matter (z. B. /CLAUDE/).
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
