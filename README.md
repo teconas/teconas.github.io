@@ -12,6 +12,7 @@ _config.yml          zentrale Konfiguration: Site-Werte, Spieleliste (games), de
 _layouts/            game.html (Landingpage), privacy.html (Datenschutzerklärung)
 _includes/           header.html (Navigation aus games), draft-notice.html
 index.md             Startseite, listet alle Spiele aus games
+privacy.md           Datenschutzerklärung der Website selbst
 <slug>/index.md      Landingpage eines Spiels
 <slug>/privacy.md    Datenschutzerklärung eines Spiels
 ```
@@ -21,6 +22,7 @@ index.md             Startseite, listet alle Spiele aus games
 | Seite                 | URL                                          |
 |-----------------------|----------------------------------------------|
 | Startseite            | `https://teconas.github.io/`                 |
+| Datenschutz Website   | `https://teconas.github.io/privacy/`         |
 | Landingpage           | `https://teconas.github.io/<slug>/`          |
 | Datenschutzerklärung  | `https://teconas.github.io/<slug>/privacy/`  |
 

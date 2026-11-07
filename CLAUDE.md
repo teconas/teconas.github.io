@@ -8,6 +8,7 @@ GitHub-Pages-User-Site `teconas.github.io`: Datenschutzerklärungen und Landingp
 - `defaults`: `""` → Layout `game`, `lang: en`; `*/privacy.md` → Layout `privacy`, `lang: de`; je Spiel `path: <slug>` → `game: <slug>`.
 - Layouts `game`/`privacy` holen das Spiel per `site.games | where: "slug", page.game` und zeigen bei `draft: true` den Entwurfshinweis.
 - `_includes/header.html` überschreibt minima: Navigation aus `site.games`.
+- `/privacy/` → `privacy.md` (Datenschutz der Website; eigenes Front Matter `layout: default`, `lang: de`; `*/privacy.md` greift im Root nicht).
 - `/` → `index.md`, `/<slug>/` → `<slug>/index.md`, `/<slug>/privacy/` → `<slug>/privacy.md`.
 
 ## Neues Spiel hinzufügen
@@ -23,6 +24,7 @@ GitHub-Pages-User-Site `teconas.github.io`: Datenschutzerklärungen und Landingp
 - `exclude` in `_config.yml` pflegen, wenn neue interne Dateien dazukommen. GitHub Pages rendert sonst auch Markdown ohne Front Matter. Jekyll-Standard-Excludes sind dort mit aufgeführt, weil die Liste sie überschreibt.
 - Keine externen Ressourcen (Fonts, Skripte, CDNs), kein Tracking, keine Cookies, kein `google_analytics`.
 - Keine `.nojekyll`-Datei.
+- Zeilen, die mit einer Zahl und Punkt beginnen (z. B. Datum unter „Stand“), escapen: `7\. November 2026.` Sonst rendert Markdown eine Liste und die Zahl geht verloren.
 
 ## Deployment
 - Nicht selbst committen oder pushen, das macht der User.

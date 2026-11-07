@@ -20,3 +20,7 @@ Apps & Spiele von teconas.
 {%- endif %}
 
 {% endfor -%}
+
+---
+
+[Datenschutzerklärung dieser Website / Privacy Policy]({{ '/privacy/' | relative_url }})
